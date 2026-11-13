@@ -1,0 +1,21 @@
+# 依赖
+node_modules/
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+*.swp
+
+# 临时与备份
+*.tmp
+*.bak
+*.bak-*
+
+# 本地数据：插件不会往仓库目录里写，这里只是防止误提交
+experience/
+skills/
+ideas/
+notes.json
+index.md
+AGENTSKILL.md
+.trash/

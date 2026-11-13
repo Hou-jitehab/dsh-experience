@@ -1,0 +1,57 @@
+{
+  "name": "dsh-experience",
+  "version": "0.1.0",
+  "description": "全局经验：把完成的任务记录成可读、可编辑的经验，并把想法、记事本和 AGENTS.md 收进同一个面板。",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "experience",
+    "memory",
+    "agents"
+  ],
+  "homepage": "https://github.com/Hou-jitehab/dsh-experience#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hou-jitehab/dsh-experience.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hou-jitehab/dsh-experience/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "type": "module",
+  "main": "index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "AGENTSKILL.default.md",
+    "lib",
+    "locale/*.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "slots"
+      ]
+    }
+  }
+}

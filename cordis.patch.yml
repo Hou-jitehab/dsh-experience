@@ -1,0 +1,4 @@
+# 全局经验：Host 半加载 index.js，dsh.client 让 Web 端加载 client.js。
+- insert:
+    - id: experience
+      name: dsh-experience
